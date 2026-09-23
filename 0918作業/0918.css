@@ -23,10 +23,29 @@ h2 {
   margin: 0;
 }
 
-.gender-group {
+.gender-group,
+.nationality {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 20px;
+  border: none;
+  padding: 0;
+  min-width: 0;
+}
+
+.gender-group legend,
+.nationality legend {
+  float: left;
+  padding: 0;
+  margin-right: 1px;
+}
+
+.gender-group > div,
+.nationality > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .postal-code {

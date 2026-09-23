@@ -25,37 +25,52 @@
         name="name" required />
     </div>
 
-    <div class="gender-group">
-      <p>性別 / gender</p>
 
-      <input
-        type="radio"
-        id="male"
-        name="gender" />
-      <label for="male">男 / male</label>
+    
+    <fieldset class="gender-group">
+      <legend>性別 / gender</legend>
 
-      <input
-        type="radio"
-        id="female"
-        name="gender" />
-      <label for="female">女 / female</label>
-    </div>
+      <div>
+        <input
+          type="radio"
+          id="male"
+          name="gender"
+          value="male" 
+          />
+        <label for="male">男 / male</label>
 
-    <div class="gender-group">
-      <p>國籍 / Nationality</p>
+        <input
+          type="radio"
+          id="female"
+          name="gender"
+          value="female" 
+          />
+        <label for="female">女 / female</label>
+      </div>
+    </fieldset>
+    
 
-      <input
-        type="radio"
-        id="ROC"
-        name="Nationality" />
-      <label for="ROC">本國國籍 / ROC Citizens</label>
+    <fieldset class="nationality">
+      <legend>國籍 / Nationality</legend>
 
-      <input
-        type="radio"
-        id="NON"
-        name="Nationality" />
-      <label for="NON">外國國籍 / Non-Citizens</label>
-    </div>
+      <div>
+        <input
+          type="radio"
+          id="ROC"
+          name="Nationality"
+          value="ROC" 
+          />
+        <label for="ROC">本國國籍 / ROC Citizens</label>
+
+        <input
+          type="radio"
+          id="NON"
+          name="Nationality" 
+          value="NON" 
+          />
+        <label for="NON">外國國籍 / Non-Citizens</label>
+      </div>
+    </fieldset>
 
     <div>
       <label for="name">身分證號 / ID Number<span class="required">*</span></label>
